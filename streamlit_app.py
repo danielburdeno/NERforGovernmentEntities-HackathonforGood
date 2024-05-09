@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 from nltk.tokenize import word_tokenize
+nltk.download('punkt')
 
 model = joblib.load('dt_model_new.joblib')
 def predict_class(data):
