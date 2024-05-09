@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from nltk.tokenize import word_tokenize
 
-model = joblib.load('dt_model_new.pkl')
+model = joblib.load('dt_model_new.joblib')
 def predict_class(data):
     # Preprocess your text data if needed
     # Make prediction using the loaded model
